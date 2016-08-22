@@ -44,14 +44,14 @@ namespace noob
 					return inner;
 				}
 
-				static handle make(uint32_t i)
+				static handle make(uint32_t i) noexcept(true)
 				{
 					handle h;
 					h.inner = i;
 					return h;
 				}
 
-				static handle make_invalid()
+				static handle make_invalid() noexcept(true)
 				{
 					handle h;
 					h.inner = std::numeric_limits<uint32_t>::max();
