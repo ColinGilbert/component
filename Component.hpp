@@ -132,8 +132,9 @@ namespace noob
 			uint32_t count() const noexcept(true)
 			{
 				return items.size();
-			}
 
+			}
+/*
 			std::tuple<bool, uint32_t> index_from_ptr(const T* ptr) const noexcept(true)
 			{
 				const ptrdiff_t max_size = (items.size() * sizeof(T)) - sizeof(T);
@@ -153,7 +154,7 @@ namespace noob
 				const ptrdiff_t diff = ptr - &(items[0]);
 				return diff / sizeof(T);
 			}
-
+*/
 			protected:
 			
 			rde::vector<T> items;
