@@ -78,6 +78,11 @@ namespace noob
 				}	
 			}
 
+			// This is for when you literally just checked the index and don't need more overhead.
+			T get_unsafe(noob::handle<T> h) const noexcept(true)
+			{
+					return items[h.index()];
+			}
 
 			std::tuple<bool, const T*> get_ptr(handle<T> h) const noexcept(true)
 			{
