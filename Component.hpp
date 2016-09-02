@@ -73,7 +73,7 @@ namespace noob
 				if (exists(h)) return items[h.index()];
 				else 
 				{
-					logger::log("Invalid access to component");
+					assert(0 && "Invalid access to component");
 					return items[0];
 				}	
 			}
@@ -178,7 +178,7 @@ namespace noob
 					}
 					else 
 					{
-						logger::log("Invalid access to component");
+						assert(0 && "Invalid access to component");
 						return items[0].get();
 					}
 				}
