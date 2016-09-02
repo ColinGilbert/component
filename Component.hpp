@@ -73,7 +73,7 @@ namespace noob
 				if (exists(h)) return items[h.index()];
 				else 
 				{
-					assert(0 && "Invalid access to component");
+					assert(0 && "Invalid access to component!");
 					return items[0];
 				}	
 			}
